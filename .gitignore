@@ -1,0 +1,8 @@
+patches
+drw.o
+dwm
+dwm.o
+util.o
+dwm.c.orig
+config.mk.orig
+config.def.h.orig
