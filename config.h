@@ -34,7 +34,10 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "plasmashell", "plasmashell", "Desktop @ QRect", 1 << 8, 0, -1 }, // send plasma desktop to tag 9
 	{ NULL, NULL, "meet.google.com is sharing your screen.", 1 << 8, 1, -1 }, // send google meet popup to tag 9
-	{ "kcalc", "kcalc", NULL, 0, 1, -1 } // make calculator floating by default
+	{ "kcalc", "kcalc", NULL, 0, 1, -1 }, // make calculator floating by default
+	{ "Google-chrome", "google-chrome", NULL, 1 << 4, 0, -1 }, // use tag 5 for chrome
+	{ NULL, NULL, "NoiseTorch", 1 << 2, 0, -1 }, // use tag 3 for noisetorch
+	{ "MyPaint", "mypaint", NULL, 1 << 5, 0, -1 } // use tag 6 for mypaint
 };
 
 /* layout(s) */
