@@ -39,7 +39,10 @@ static const Rule rules[] = {
 	{ "kcalc", "kcalc", NULL, 0, 1, -1 }, // make calculator floating by default
 	{ "Google-chrome", "google-chrome", NULL, 1 << 4, 0, -1 }, // use tag 5 for chrome
 	{ NULL, NULL, "NoiseTorch", 1 << 2, 0, -1 }, // use tag 3 for noisetorch
-	{ "MyPaint", "mypaint", NULL, 1 << 5, 0, -1 } // use tag 6 for mypaint
+	{ "MyPaint", "mypaint", NULL, 1 << 5, 0, -1 }, // use tag 6 for mypaint
+	{ "Chromium", "chromium", NULL, 1 << 4, 0, -1 }, // use tag 5 for chromium
+	{ "Brave-browser", "crx_nngceckbapebfimnlniiiahkandclblb", NULL, 0, 1, -1 },
+	{ "SimpleScreenRecorder", "simplescreenrecorder", "SimpleScreenRecorder", 0, 1, -1 }
 };
 
 /* layout(s) */
