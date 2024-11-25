@@ -8,7 +8,7 @@ static const unsigned int systrayonleft  = 0;   /* 0: systray in the right corne
 static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray        = 1;        /* 0 means no systray */
-static const int showbar            = 1;        /* 0 means no bar */
+static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
@@ -37,12 +37,14 @@ static const Rule rules[] = {
 	{ "plasmashell", "plasmashell", "Desktop @ QRect", 1 << 8, 0, -1 }, // send plasma desktop to tag 9
 	{ NULL, NULL, "meet.google.com is sharing your screen.", 1 << 8, 1, -1 }, // send google meet popup to tag 9
 	{ "kcalc", "kcalc", NULL, 0, 1, -1 }, // make calculator floating by default
+	{ "picker", "picker", NULL, 0, 1, -1 }, // make nnn picker floating by default
 	{ "Google-chrome", "google-chrome", NULL, 1 << 4, 0, -1 }, // use tag 5 for chrome
 	{ NULL, NULL, "NoiseTorch", 1 << 2, 0, -1 }, // use tag 3 for noisetorch
 	{ "MyPaint", "mypaint", NULL, 1 << 5, 0, -1 }, // use tag 6 for mypaint
 	{ "Chromium", "chromium", NULL, 1 << 4, 0, -1 }, // use tag 5 for chromium
 	{ "Brave-browser", "crx_nngceckbapebfimnlniiiahkandclblb", NULL, 0, 1, -1 },
-	{ "SimpleScreenRecorder", "simplescreenrecorder", "SimpleScreenRecorder", 0, 1, -1 }
+	{ "SimpleScreenRecorder", "simplescreenrecorder", "SimpleScreenRecorder", 0, 1, -1 },
+	{ NULL, NULL, "KRunner", 0, 1, -1 }
 };
 
 /* layout(s) */
@@ -74,7 +76,8 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "kitty", NULL };
+/* https://github.com/kovidgoyal/kitty/discussions/6017#discussioncomment-4970377 */
+static const char *termcmd[]  = { "kitty", "--single-instance", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
