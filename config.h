@@ -42,9 +42,9 @@ static const Rule rules[] = {
 	{ NULL, NULL, "NoiseTorch", 1 << 2, 0, -1,    -1,-1,-1,-1, -1  }, // use tag 3 for noisetorch
 	{ "MyPaint", "mypaint", NULL, 1 << 5, 0, -1,     -1,-1,-1,-1, -1  }, // use tag 6 for mypaint
 	{ "Chromium", "chromium", NULL, 1 << 4, 0, -1,   -1,-1,-1,-1, -1  }, // use tag 5 for chromium
-	{ "Brave-browser", "crx_nngceckbapebfimnlniiiahkandclblb", NULL, 0, 1, -1,   -1,-1,-1,-1, -1  },
 	{ "SimpleScreenRecorder", "simplescreenrecorder", "SimpleScreenRecorder", 0, 1, -1,     -1,-1,-1,-1, -1  },
 	{ NULL, NULL, "KRunner", 0, 1, -1,   -1,-1,-1,-1, -1 },
+	{ NULL, NULL, "Event Tester", 0, 1, -1,   -1,-1,-1,-1, -1 },
 };
 
 /* layout(s) */
