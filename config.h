@@ -39,6 +39,7 @@ static const Rule rules[] = {
 	{ "kcalc", "kcalc", NULL, 0, 1, -1,     -1,-1,-1,-1, -1 }, // make calculator floating by default
 	{ "picker", "picker", NULL, 0, 1, -1,     -1,-1,1800,800, -1  }, // make nnn picker floating by default
 	{ "Google-chrome", "google-chrome", NULL, 1 << 4, 0, -1,    -1,-1,-1,-1, -1  }, // use tag 5 for chrome
+	{ "Bitwarden", "bitwarden", "Bitwarden", 1 << 8, 0, -1,    -1,-1,-1,-1, -1  }, // use tag 9 for bitwarden
 	{ NULL, NULL, "NoiseTorch", 1 << 2, 0, -1,    -1,-1,-1,-1, -1  }, // use tag 3 for noisetorch
 	{ "MyPaint", "mypaint", NULL, 1 << 5, 0, -1,     -1,-1,-1,-1, -1  }, // use tag 6 for mypaint
 	{ "Chromium", "chromium", NULL, 1 << 4, 0, -1,   -1,-1,-1,-1, -1  }, // use tag 5 for chromium
