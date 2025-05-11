@@ -33,20 +33,19 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor    float x,y,w,h    floatborderpx */
-	{ "plasmashell", "plasmashell", "Desktop @ QRect", 1 << 8, 0, -1,      -1,-1,-1,-1, -1  }, // send plasma desktop to tag 9
-	{ NULL, NULL, "is sharing your screen.", 1 << 8, 1, -1,      -1,-1,-1,-1, -1  }, // send google meet popup to tag 9
-	{ "kcalc", "kcalc", NULL, 0, 1, -1,     -1,-1,-1,-1, -1 }, // make calculator floating by default
-	{ "picker", "picker", NULL, 0, 1, -1,     -1,-1,1800,800, -1  }, // make nnn picker floating by default
-	{ "kronometer", "kronometer", NULL, 0, 1, -1,     -1,-1,1800,800, -1  }, // make nnn picker floating by default
-	{ "Google-chrome", "google-chrome", NULL, 1 << 4, 0, -1,    -1,-1,-1,-1, -1  }, // use tag 5 for chrome
-	{ "Bitwarden", "bitwarden", "Bitwarden", 1 << 8, 0, -1,    -1,-1,-1,-1, -1  }, // use tag 9 for bitwarden
-	{ NULL, NULL, "NoiseTorch", 1 << 8, 0, -1,    -1,-1,-1,-1, -1  }, // use tag 3 for noisetorch
-	{ "MyPaint", "mypaint", NULL, 1 << 5, 0, -1,     -1,-1,-1,-1, -1  }, // use tag 6 for mypaint
-	{ "Chromium", "chromium", NULL, 1 << 4, 0, -1,   -1,-1,-1,-1, -1  }, // use tag 5 for chromium
-	{ "SimpleScreenRecorder", "simplescreenrecorder", "SimpleScreenRecorder", 0, 1, -1,     -1,-1,-1,-1, -1  },
-	{ NULL, NULL, "KRunner", 0, 1, -1,   -1,-1,-1,-1, -1 },
-	{ NULL, NULL, "Event Tester", 0, 1, -1,   -1,-1,-1,-1, -1 },
+	/* class                  instance                title                      tags mask     isfloating   monitor    float x,y,w,h    floatborderpx */
+	{ "plasmashell",          "plasmashell",          "Desktop @ QRect",         1 << 8,       0,           -1,        -1,-1,-1,-1,     -1 }, // send plasma desktop to tag 9
+	{ NULL,                   NULL,                   "is sharing your screen.", 1 << 8,       1,           -1,        -1,-1,-1,-1,     -1 }, // send google meet popup to tag 9
+	{ "kcalc",                "kcalc",                NULL,                      0,            1,           -1,        -1,-1,-1,-1,     -1 }, // make calculator floating by default { "picker",               "picker",               NULL,                      0,            1,           -1,        -1,-1,1800,800,  -1 }, // make nnn picker floating by default
+	{ "kronometer",           "kronometer",           NULL,                      0,            1,           -1,        -1,-1,1800,800,  -1 }, // make nnn picker floating by default
+	{ "Google-chrome",        "google-chrome",        NULL,                      1 << 4,       0,           -1,        -1,-1,-1,-1,     -1 }, // use tag 5 for chrome
+	{ "Bitwarden",            "bitwarden",            "Bitwarden",               1 << 8,       0,           -1,        -1,-1,-1,-1,     -1 }, // use tag 9 for bitwarden
+	{ NULL,                   NULL,                   "NoiseTorch",              1 << 8,       0,           -1,        -1,-1,-1,-1,     -1 }, // use tag 3 for noisetorch
+	{ "MyPaint",              "mypaint",              NULL,                      1 << 5,       0,           -1,        -1,-1,-1,-1,     -1 }, // use tag 6 for mypaint
+	{ "Chromium",             "chromium",             NULL,                      1 << 4,       0,           -1,        -1,-1,-1,-1,     -1 }, // use tag 5 for chromium
+	{ "SimpleScreenRecorder", "simplescreenrecorder", "SimpleScreenRecorder",    0,            1,           -1,        -1,-1,-1,-1,     -1 },
+	{ NULL,                   NULL,                   "KRunner",                 0,            1,           -1,        -1,-1,-1,-1,     -1 },
+	{ NULL,                   NULL,                   "Event Tester",            0,            1,           -1,        -1,-1,-1,-1,     -1 },
 };
 
 /* layout(s) */
