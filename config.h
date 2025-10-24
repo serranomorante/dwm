@@ -37,6 +37,7 @@ static const Rule rules[] = {
 	{ "plasmashell",          "plasmashell",          "Desktop @ QRect",         1 << 8,       0,           -1,        -1,-1,-1,-1,     -1 }, // send plasma desktop to tag 9
 	{ NULL,                   NULL,                   "is sharing your screen.", 1 << 8,       1,           -1,        -1,-1,-1,-1,     -1 }, // send google meet popup to tag 9
 	{ "kcalc",                "kcalc",                NULL,                      0,            1,           -1,        -1,-1,-1,-1,     -1 }, // make calculator floating by default { "picker",               "picker",               NULL,                      0,            1,           -1,        -1,-1,1800,800,  -1 }, // make nnn picker floating by default
+	{ "mouseless",            "Mouseless",            "Mouseless",               0,            1,           -1,        -1,-1,-1,-1,     -1 }, // make mouseless-click config floating by default
 	{ "kronometer",           "kronometer",           NULL,                      0,            1,           -1,        -1,-1,1800,800,  -1 }, // make nnn picker floating by default
 	{ "Google-chrome",        "google-chrome",        NULL,                      1 << 4,       0,           -1,        -1,-1,-1,-1,     -1 }, // use tag 5 for chrome
 	{ "Microsoft-edge",       "microsoft-edge",       NULL,                      1 << 4,       0,           -1,        -1,-1,-1,-1,     -1 }, // use tag 5 for edge
